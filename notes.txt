@@ -1,0 +1,45 @@
+Big O Notation ~ tips and tricks
+1. User all the things
+2. Use logical variable names
+3. Define the variables you need
+4. Adding vs multiplying
+5. Drop constants
+6. Use big o for space ~ remember the call stack
+7. Drop non-dominant terms
+
+
+Seven Step Processes
+1. Listen for clues and clarifications
+2. Draw an example: large and generic
+3. Brute force 
+4. Optimize ~ do before you write the code. Think of Big O.
+5. Walk through your algorithm
+6. Write the code ~ you typically dont' ask you to hit run. They want to hear your thought process.
+7. Verification ~ runtime, space, constraints, and bug free.
+
+
+Optimizing with BUD
+1. Bottlenecks. 
+2. Unnecessary work.
+3. Duplicate code.
+
+
+Optimizing with Space and Time
+1. Hash tables are great for space vs time. 
+2. Pre-computation: Space vs Time.
+3. Tries are great for time vs space. 
+
+Best Conveivable Runtime
+"Best Conveivable Runtime" is about the problem, not a specific algorithm.
+And it has nothing to do with the best case/worst case runtime.
+
+    1. Linear search: O(n)
+    2. Binary Search: O(log n)
+    3. Jump Search: O(sqrt(n))
+    4. Interpolation Search: O(log(log n))
+    5. Exponential Search: O(log n)
+    6. Quickselect: O(n)
+    7. Heapselect: O(n)
+    8. Quickselect: O(n)
+
+Optimize with DIY
