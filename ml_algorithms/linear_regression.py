@@ -9,3 +9,5 @@ denominator = sum((xi - mean_x) ** 2 for xi in x)
 
 beta_1 = numerator / denominator
 beta_0 = mean_y - beta_1 * mean_x
+
+print(f"C")
