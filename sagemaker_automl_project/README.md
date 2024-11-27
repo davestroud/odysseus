@@ -1,7 +1,3 @@
-### **`README.md`**
-
----
-
 # SageMaker Autopilot Pipeline Project
 
 ## Overview
