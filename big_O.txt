@@ -1,0 +1,64 @@
+Big O notation is used to describe the efficiency of an algorithm, especially in terms of time or space as the input size grows. Here’s a breakdown of the most common time complexities and what they mean:
+
+### 1. **O(1) – Constant Time**
+- **Definition**: The algorithm takes the same amount of time regardless of the input size.
+- **Example**: Accessing an element in an array by index (`arr[5]`). No matter the size of the array, accessing a specific index always takes the same time.
+- **Analogy**: Imagine walking into a library and instantly finding a specific book because it's always in the same spot, no matter how large the library is.
+
+---
+
+### 2. **O(log n) – Logarithmic Time**
+- **Definition**: The algorithm reduces the problem size in each step, leading to faster execution as the input grows.
+- **Example**: Binary search, where the search space is halved with each iteration.
+- **Analogy**: Think of finding a name in a phone book by splitting the book in half repeatedly. You discard one half and focus on the other until you find the name.
+
+---
+
+### 3. **O(n) – Linear Time**
+- **Definition**: The algorithm's execution time grows in direct proportion to the input size.
+- **Example**: Traversing an array to find a specific value, where each element must be checked.
+- **Analogy**: Imagine searching through a line of people one by one until you find your friend. The time it takes grows with the number of people.
+
+---
+
+### 4. **O(n log n) – Linearithmic Time**
+- **Definition**: This complexity is common in efficient sorting algorithms like mergesort and heapsort. The time grows slightly faster than linear but much slower than quadratic.
+- **Example**: Mergesort, where the array is divided into halves (log n steps) and then merged back (n steps).
+- **Analogy**: Sorting a deck of cards by splitting it into smaller and smaller groups, then merging them back in sorted order.
+
+---
+
+### 5. **O(n²) – Quadratic Time**
+- **Definition**: The algorithm's time grows proportionally to the square of the input size, making it inefficient for large inputs.
+- **Example**: A simple bubble sort, where each element is compared with every other element.
+- **Analogy**: Imagine a round-robin tournament where each player plays against every other player. As the number of players increases, the number of games grows rapidly.
+
+---
+
+### 6. **O(2^n) – Exponential Time**
+- **Definition**: The time doubles with each additional element in the input, leading to very slow performance for larger inputs.
+- **Example**: Solving the traveling salesman problem using a brute-force approach.
+- **Analogy**: Picture a decision tree where each choice leads to two new options. With each additional decision, the number of branches doubles, quickly creating an overwhelming number of paths to check.
+
+---
+
+### 7. **O(n!) – Factorial Time**
+- **Definition**: The algorithm’s time grows at an extreme rate, as it tries every possible combination or arrangement of the input.
+- **Example**: Calculating all possible permutations of a set (e.g., for some exhaustive search problems).
+- **Analogy**: Imagine trying to arrange a group of friends in every possible seating order. As the group grows, the number of possible arrangements explodes, making it incredibly time-consuming.
+
+---
+
+### Summary of Common Big O Notation
+
+| **Big O**   | **Name**        | **Performance** | **Example**                  |
+|-------------|-----------------|-----------------|------------------------------|
+| O(1)        | Constant        | Fast            | Accessing array by index     |
+| O(log n)    | Logarithmic     | Fast for large inputs | Binary search              |
+| O(n)        | Linear          | Moderate        | Traversing a list            |
+| O(n log n)  | Linearithmic    | Efficient       | Mergesort, Quicksort         |
+| O(n²)       | Quadratic       | Slow            | Bubble sort, Selection sort  |
+| O(2^n)      | Exponential     | Very slow       | Solving a traveling salesman |
+| O(n!)       | Factorial       | Extremely slow  | Generating all permutations  |
+
+These notations help developers estimate how an algorithm will scale as the input size grows, allowing them to make informed choices in selecting efficient algorithms.
