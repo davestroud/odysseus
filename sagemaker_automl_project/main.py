@@ -57,3 +57,5 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"An error occurred: {e}")
         raise
+
+print("Hello World")
